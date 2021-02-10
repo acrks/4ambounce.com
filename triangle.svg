@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="446" height="397" viewBox="0 0 446 397">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.156" y1="0.555" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9915c1"/>
+      <stop offset="0.246" stop-color="#b64fed"/>
+      <stop offset="0.507" stop-color="#d66dd2"/>
+      <stop offset="0.655" stop-color="#fff"/>
+      <stop offset="0.729" stop-color="#9d2aac"/>
+      <stop offset="1" stop-color="#9064b1"/>
+    </linearGradient>
+    <filter id="Subtraction_1" x="0" y="0" width="446" height="397" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12.5" result="blur"/>
+      <feFlood flood-color="#b54dec"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Subtraction_1)">
+    <path id="Subtraction_1-2" data-name="Subtraction 1" d="M185.5,322,0,0H371L185.5,322ZM8.244,5.664,185.5,312.292,362.756,5.664Z" transform="translate(37.5 37.5)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

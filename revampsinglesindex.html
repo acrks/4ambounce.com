@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4AM BOUNCE SINGLES</title>
+    <link rel="stylesheet" href="/Users/aic/Desktop/4am Bounce copy/css/mainsingle.css">
+</head>
+<nav>
+        <a class= "appleicon" href="https://music.apple.com/us/artist/4am-bounce/1496480979?uo=4&app=music&ls=1" target="blank"></a>
+        <a href="https://4ambounce.com/index.html" class="homelink">HOME</a>
+        <a class= "spotifyicon" href="https://open.spotify.com/artist/1TkDX0i0KrZC83GSWJ0gvr" target="blank"></a>
+</nav>
+<body>
+    <div class="wrapper">
+
+        
+        <!-- Container for player -->
+        <div class="container">
+            
+                    <div class = "artworkborder"><img class = "playerimage"><audio id="song"></audio>
+                    </div>
+                        <!-- Progress bar goes here? -->
+                        <div class = "buttons">
+                            <div class = "playfirst"></div>
+                            <div class = "rewind"></div>
+                            <div class = "pause"></div>
+                            <div class = "fastforward"></div>
+                        </div>
+                        <div class = "pbcontainer">
+                            <input
+                            type="range"
+                            id="progress-bar"
+                            min="0"
+                            max=""
+                            value="0"
+                            onchange="changeProgressBar()"
+                          />
+                        </div>
+                <div class = "collection">
+                </div>
+                <p>Scroll Right For More</p>
+            </div>
+    </div>
+        
+
+
+    <img src= "https://4ambounce.com/bgv3alt5.svg" class="bg" alt="background">
+
+    <div class="graph-container">
+
+        <div class="graph"></div>
+    </div>
+
+    <script src="script.js">
+    </script>
+</body>

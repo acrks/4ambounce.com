@@ -1,0 +1,585 @@
+body {
+  background-image: linear-gradient(30deg, #282828, #272727, #282828, #272727);
+  height: auto;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+* {
+    box-sizing: content-box;
+}
+
+@font-face {
+  font-family: '4amnormalFont';
+  src: url('/Users/aic/Library/Fonts/DIGITALDREAMFATNARROW.ttf');
+}
+
+@font-face {
+  font-family: '4amaltfont';
+  src: url('file:///Users/aic/Desktop/4am%20Bounce/led_sas.ttf')
+}
+
+@font-face {
+  font-family: '4amsubFont';
+  src: url('/Users/aic/Library/Fonts/saved by zero rg.ttf')
+}
+
+.parent {
+  margin-top: 75px;
+  margin-bottom: 25px;
+  display: flex;
+}
+
+.arc {
+  border: 30px solid #3b3b3b;
+  border-radius: 50%;
+  height: 800px;
+  width: 800px;
+  background-color: transparent;
+  border-top-color: transparent;
+  animation: rotate 5s reverse infinite linear;
+
+}
+
+.buffer {
+  border-radius: 50%;
+  height: 800px;
+  width: 800px;
+  background-color: transparent;
+  border-top-color: transparent;
+  animation: rotate 5s infinite linear;
+  display: flex;
+
+}
+
+.clockface {
+  background-image: url('file:///Users/aic/Desktop/4am%20Bounce/clockdarkthemerecord.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 800px;
+  height: 800px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  animation: clocktick 1s infinite reverse ease-in-out;
+  animation-direction: alternate-reverse;
+}
+
+.text {
+  font-family: '4amsubFont';
+  font-size: 120px;
+  text-transform: uppercase;
+  letter-spacing: 9px;
+  animation: glow 1s alternate-reverse infinite ease-in-out;
+  -webkit-text-stroke-color: #dbe4eb;
+  -webkit-text-stroke-width: 4px;
+  background: linear-gradient(45deg, #1e5799 0%,#d872d7 33%,#2989d8 67%,#fc84e6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#fc84e6', GradientType=1 );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text:after {
+  background: none;
+  content: attr(data-text);
+  left: 0;
+  position: absolute;
+  top: 0;
+  text-shadow: 1px 1px 2px #000;
+}
+
+@keyframes glow {
+  0%   { transform: rotate(0deg);}
+    40% { transform: rotate(30deg);}
+    55% {transform: rotate(25deg);}
+    70% {transform: rotate(30deg);}
+    85% {transform: rotate(27deg);}
+    100%  { transform: rotate(30deg);}
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+}
+
+100% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+}
+}
+
+    @keyframes rotate {
+      0%    { transform: rotate(0deg);  opacity: 1;
+              box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+            }
+      20% { box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2); }
+      40% {box-shadow: 0 0 0 35px rgba(0, 0, 0, 0); }
+      60% { box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2); }
+      80% { box-shadow: 0 0 0 35px rgba(0, 0, 0, 0); }
+      100%  { transform: rotate(360deg); 
+            opacity: 0.99;
+            box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2); }
+    }
+
+    @keyframes clocktick {
+      0%   { transform: rotate(0deg); }
+      40% { transform: rotate(-30deg);}
+      55% {transform: rotate(-25deg);}
+      70% {transform: rotate(-30deg);}
+      85% {transform: rotate(-27deg);}
+      100%  { transform: rotate(-30deg); }
+    }
+
+
+
+    
+
+
+.platforms {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+  width: 30%;
+    }
+
+.spotifyicon {
+  color: white;
+  display: inline-block;
+  overflow: hidden;
+  background: no-repeat;
+  width: 40px;
+  height: 40px;
+}
+
+h2 {
+  font-size: 80px;
+  font-family: '4amsubFont';
+  -webkit-text-stroke-color: #dbe4eb;
+  -webkit-text-stroke-width: 1px;
+  background: linear-gradient(45deg, #1e5799 0%,#d872d7 33%,#2989d8 67%,#fc84e6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#fc84e6', GradientType=1 );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.latest,
+.singles {
+  flex-direction: column;
+}
+
+.singles {
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+  .singles:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px white, -1px -1px 10px white;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8; 
+}
+
+.img:hover {
+  opacity: 1;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.departure {
+  background-image: url('file:///Users/aic/Desktop/4am%20Bounce/Departure.jpg');
+}
+
+.demands {
+  background-image: url('file:///Users/aic/Desktop/4am%20Bounce/4AM.jpg');
+
+}
+
+.deepseas {
+  background-image: url('file:///Users/aic/Desktop/4am%20Bounce/deepseas.jpg');
+}
+
+.elevenseconds {
+  background-image: url('file:///Users/aic/Desktop/4am%20Bounce/11-seconds.jpg');
+}
+
+.column {
+  flex-direction: row;
+  flex-basis: 25%;
+  flex-grow: 0;
+  height: auto;
+
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  margin-top: 10%;
+  position: relative;
+
+}
+
+#expandedImg {
+  width: 50%;
+  height: auto;
+  filter: blur(8px);
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+
+img {
+  width: 200px;
+}
+
+p {
+  font-family: '4amsubFont';
+  font-size: 100%;
+  text-transform: uppercase;
+  color: #dbe4eb;
+}
+
+#background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+/* container for music player */
+.container {
+
+    height: 300pt;
+    width: 250pt;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000000;
+}
+
+/* container for play, pause, previous track, next track, and progress bar  */
+.box {
+    position: absolute;
+    height: 48%;
+    width: 103%;
+    background: -webkit-linear-gradient(45deg, rgb(40, 40, 40), rgb(133, 133, 133));
+    z-index: 4;
+    bottom: -17%;
+}
+
+/* album cover */
+#thumbnail {
+    position: absolute;
+    width: 110%;
+    top: 0%;
+    transition: 1s;
+    z-index: 3;
+}
+
+/* track artist */
+.song-artist {
+    position: absolute;
+    z-index: 4;
+    color: #dbe4eb;
+    font-family: '4amnormalfont';
+    font-weight: bold;
+    font-size: 20px;
+    bottom: 21%;
+    left: 28%;
+}
+
+/* track title */
+.player-song-title {
+    position: absolute;
+    z-index: 4;
+    color: white;
+    font-family: '4amnormalfont';
+    font-size: 17px;
+    bottom: 20%;
+    left: 30%;
+}
+
+/* style for play and pause images */
+#play-pause {
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    cursor: pointer;
+    bottom: 15%;
+    z-index: 4;
+    font-size: 53px;
+    left: 9%;
+}
+
+/* style for next and previous song images */
+#next-song, #previous-song {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    bottom: 13.5%;
+    font-size: 40px;
+    z-index: 4;
+}
+
+/* unique style for next song image */
+#previous-song {
+    right: 10%;
+}
+
+/* unique style for previous song image */
+#next-song {
+    right: 10.3%;
+    bottom: 21.5%;
+}
+
+/* style for current time of the track */
+.currentTime {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    bottom: -5%;
+    left: 17%;
+    z-index: 4;
+    font-family: '4amnormalfont';
+    font-size: 13px;
+    color: #dbe4eb;
+    align-items: center;
+}
+
+/* style for the total length of the track */
+.durationTime {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    bottom: 5%;
+    right: 11%;
+    z-index: 4;
+    font-family: '4amnormalfont';
+    font-size: 13px;
+    align-items: center;
+    color: #dbe4eb;
+}
+
+/* style for the progress bar */
+#progress-bar {
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+    z-index: 4;
+    height: 5px;
+    background: #000000;
+    width: 160pt;
+    bottom: 8%;
+    border-radius: 30px;
+    left: 17%;
+}
+
+/* style for the progress bar's slider thumb */
+#progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    margin-top: -3px;
+    margin-left: 0px;
+    height: 10px;
+    width: 7px;
+    border: 0;
+    background: -webkit-linear-gradient(45deg,  rgb(213, 213, 213), #dbe4eb);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* style for the progress bar's runnable track */
+#progress-bar::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    max-height: 5px;
+    border-radius: 30px;
+}
+
+/* style to remove blue shade of the progress bar when clicked on/selected */
+#progress-bar:focus {
+    outline: none;
+}
+/*Tablet*/
+@media (max-width: 880px) {
+      .parent {
+        margin-top: 50px;
+        margin-bottom: 25px;
+      }
+      
+      .arc {
+        border: 22.5px solid #3b3b3b;
+        height: 600px;
+        width: 600px;
+
+      
+      }
+      
+      .buffer {
+        height: 600px;
+        width: 600px;
+      }
+      
+      .clockface {
+        width: 600px;
+        height: 600px;
+      }
+      
+      .text {
+        font-size: 90px;
+        letter-spacing: 9px;
+        -webkit-text-stroke-color: #dbe4eb;
+        -webkit-text-stroke-width: 3px;
+      }
+      
+      .platforms {
+        margin-top: 75px;
+        width: 30%;
+          }
+      
+      h2 {
+        font-size: 60px;
+        -webkit-text-stroke-width: 0.5px;
+      }
+      
+      .img {
+        width: 150px;
+        height: 150px;
+        border-radius: 7.5px;
+        box-shadow: 1px 1px 7.5px white, -1px -1px 7.5px white;
+      }
+    
+      .row {
+        flex-wrap: wrap;
+      }
+      
+      .column {
+        flex-basis: 50%;
+      }
+    }
+  
+
+/*Mobile M*/
+@media (max-width: 425px) {
+
+.parent {
+    margin-top: 37.5px;
+    margin-bottom: 20px;
+  }
+  
+  .arc {
+    border: 15px solid #3b3b3b;
+    height: 400px;
+    width: 400px;
+
+  
+  }
+  
+  .buffer {
+    height: 400px;
+    width: 400px;
+  }
+  
+  .clockface {
+    width: 400px;
+    height: 400px;
+  }
+  
+  .text {
+    font-size: 60px;
+    letter-spacing: 4px;
+    -webkit-text-stroke-color: #dbe4eb;
+    -webkit-text-stroke-width: 2px;
+  }
+  
+  .platforms {
+    margin-top: 50px;
+    width: 30%;
+      }
+  
+  h2 {
+    font-size: 40px;
+    -webkit-text-stroke-width: 0.5px;
+  }
+  
+  .img {
+    width: 150px;
+    height: 150px;
+    border-radius: 7.5px;
+    box-shadow: 1px 1px 7.5px white, -1px -1px 7.5px white;
+  }
+}

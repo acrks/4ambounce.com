@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#242c65"/>
+      <stop offset="1" stop-color="#e46b8f"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="0.7" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffc94e"/>
+      <stop offset="1" stop-color="#ffec84"/>
+    </linearGradient>
+    <filter id="Path_1" x="607.718" y="453.046" width="707.088" height="215.379" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-color="#727dd6"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <rect width="1936" height="1081" fill="none"/>
+    </clipPath>
+    <filter id="Union_1" x="-9" y="-1" width="1936" height="701" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.624"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Union_1-2" x="-9" y="721" width="1936" height="701" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.624"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-Web_1920_1">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_1" data-name="Web 1920 – 1" clip-path="url(#clip-Web_1920_1)">
+    <rect width="1920" height="1080" fill="#1d1c19"/>
+    <g id="Group_2" data-name="Group 2">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="1920" height="1080" fill="url(#linear-gradient)"/>
+      <path id="Path_3" data-name="Path 3" d="M410.5,0C637.213,0,821,183.787,821,410.5S637.213,821,410.5,821,0,637.213,0,410.5,183.787,0,410.5,0Z" transform="translate(550 88)" fill="url(#linear-gradient-2)"/>
+      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_1)">
+        <path id="Path_1-2" data-name="Path 1" d="M526.381,456.364H533.5v-16.4h6.455V436.02h6.483v-3.942h3.349v7.888h3.242V450.13l-2.3,8.666h2.3v10.251h3.523l2.085-1.539h1.921l2.006,1.539h2.752v17.871h4.918v5.336h4.223V503.4h3.608v12.92l14.178-.458V502.312h9.982v-8.136l-5.356-6.035v-47.6H583.014v-5.767h9.225V428.3H593v6.471h3.865V422.518l-13.1-5.863V365.4l13.1-7.764h8.364V348.72h.787v6.6h4.869v-9.525h7.222v9.525H622.2V341.669h.908v15.966h7.6l12.776,7.764v51.256l-12.776,5.863v24.393h9.539v4.751h-9.539V464.1l14.7.227v4.718h-14.7v46.812h14.7v-8.965h10.6v-5.478l9.656-.04V483.02h5.483V431.17H680.1V428.3h5.623v2.867h2.137v42.178l8,.156v42.814h15.294V487.882h13.326v4.372h3.895V473.465l-8.386.039v-8.352h.914v4.157h7.471V456.822h5.2v-3.677h4.431v-1.483h4.309v5.159h3.894v-2.474h6.989v2.474h4.357l7.35,2.943H774.8v56.553l121.684-.057V501.353l6.67.063V459.765h1.423v-2.943h5.956v2.943h1.4V405.246h13.818v-6.88h.575v6.88h4.425v9.8h4.75V398.367h8l2.3-3.126h2.752L951,398.367h3.408v16.681h2.005v-9.8h13.531V516.26l9.972.057V487.882h5.757v6.294l3.174-3.556V473.5h8.5V435.119h2l2.993,6.886,2.77-4.917,2.342-1.012h8.352V464.9h7.59v6.134h11.145v-5.885h3.363v-2.84h.728V464.9h1.25v50.956l29.81.458V398.672l21.1,13.451v5.207h-2.037v3.312h2.037v14.132h6.563V421.1l16.576,6.975V445.99h4.7V412.517h1.938V359.429h15.54v-3.843h5.544v-2.813h.5v2.813h1.346V420.2l4.372,10.965v85.148l14.1-.458V490.62h2.69v-7.376h-5.112V456.822h3.423l1.149-2.014,5.4-.019.43.646v-1.847h.36V455.9l.642.9,7.683.019v6.649h6.291V469.4h4.181v-9.631h7.026v56.553H877.955V469.4h-6.616v-35.25l-3.429-.421v-5.882h2.5v-8.757h-2.5v-4.436h3.429V365.522H867.91v-8.474h3.429V342.708H869.73v-3.4h-.773v3.4H867.91l-3.77-4.427H844.726l-6.581,8.912v9.319l2.038.537v6.56l-2.038,1.79v49.249h3.483v8.765h-3.483V469.4h-7.087v46.922h-3.1v-96.2L804.5,415.047V401.581H793.136v-5.274h-1.045v5.274h-4.619v48.286H782.65v65.992l-256.269.458Z" transform="translate(99 128.43)" stroke="#252c65" stroke-width="1" opacity="0.98"/>
+      </g>
+      <g id="Repeat_Grid_1" data-name="Repeat Grid 1" transform="translate(-9 -1)" clip-path="url(#clip-path)">
+        <g transform="translate(9 1)">
+          <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Union_1)">
+            <path id="Union_1-3" data-name="Union 1" d="M0,683v-5H1918v5Zm0-25v-5H1918v5Zm0-25v-5H1918v5Zm0-25v-5H1918v5Zm0-25v-5H1918v5Zm0-25v-5H1918v5Zm0-16v-5H1918v5Zm0-23v-5H1918v5Zm0-23v-5H1918v5Zm0-23v-5H1918v5Zm0-24v-5H1918v5Zm0-24v-5H1918v5Zm0-23v-5H1918v5Zm0-23v-5H1918v5Zm0-23v-5H1918v5Zm0-24v-5H1918v5Zm0-23v-5H1918v5Zm0-24v-5H1918v5Zm0-23v-5H1918v5Zm0-24v-5H1918v5Zm0-23v-5H1918v5Zm0-23v-5H1918v5Zm0-23v-5H1918v5Zm0-25v-5H1918v5Zm0-14v-5H1918v5Zm0-25v-5H1918v5ZM0,80V75H1918v5ZM0,55V50H1918v5ZM0,30V25H1918v5ZM0,5V0H1918V5Z" transform="translate(0 5)" fill="#171717" opacity="0.04"/>
+          </g>
+        </g>
+        <g transform="translate(9 723)">
+          <g transform="matrix(1, 0, 0, 1, 0, -722)" filter="url(#Union_1-2)">
+            <path id="Union_1-4" data-name="Union 1" d="M0,683v-5H1918v5Zm0-25v-5H1918v5Zm0-25v-5H1918v5Zm0-25v-5H1918v5Zm0-25v-5H1918v5Zm0-25v-5H1918v5Zm0-16v-5H1918v5Zm0-23v-5H1918v5Zm0-23v-5H1918v5Zm0-23v-5H1918v5Zm0-24v-5H1918v5Zm0-24v-5H1918v5Zm0-23v-5H1918v5Zm0-23v-5H1918v5Zm0-23v-5H1918v5Zm0-24v-5H1918v5Zm0-23v-5H1918v5Zm0-24v-5H1918v5Zm0-23v-5H1918v5Zm0-24v-5H1918v5Zm0-23v-5H1918v5Zm0-23v-5H1918v5Zm0-23v-5H1918v5Zm0-25v-5H1918v5Zm0-14v-5H1918v5Zm0-25v-5H1918v5ZM0,80V75H1918v5ZM0,55V50H1918v5ZM0,30V25H1918v5ZM0,5V0H1918V5Z" transform="translate(0 727)" fill="#171717" opacity="0.04"/>
+          </g>
+        </g>
+      </g>
+      <path id="Path_4" data-name="Path 4" d="M302.577,1097.612l119.909-394.1,14.745-18.254,10.11-13.45,6.509-7.534,11.512,12.334h9.347l4.64-16.766,19.7-5.34,16.575-14.238h19.538l12.978,5.515,13.585,8.724v9.772L585.743,631.9H596.91l8.749,8.361h10.535l6.567,5.346,9.048,8.892,12.97-8.892h10.179l30-5.346h8.89l12.539,9.922h19.06l22.4-9.922,18,9.922,34.738,4.316,13,5.34,14.366-6.468,11.623,6.468V654.5H852.8l13.611,5.34,23.374-6.468,11.07,6.468,34.857-6.468,7.142,6.468,15.055-6.468,16.844,6.468,16.872-5.34,6.9-14.238L1020.8,631.9l33.788-10.549,12.1,18.91h18.847l46.017,19.579,25.065-19.579H1168.8l6.377-8.361,36.4,27.939,49.031-5.34H1288.2l28.267-18.6h12.812l5.456-3.994,16.836,13.875,15.508,7.6,15.749-3.189,9.252,15.435,12.631,6.187,19.239-6.187,10.68,6.187,14.38,13.45,7.759-13.45h18.081l1.27,10.35,8.072,3.1-6.622,8.715,1.939,15.8,15.088-6.265,123.825,394.1Z" transform="translate(-1 -17)"/>
+    </g>
+  </g>
+</svg>
